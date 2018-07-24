@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "eslint": "node_modules/.bin/eslint src/**/*.js",
-    "start": "cross-env NODE_ENV=production PORT=8000 LOG_LABEL=app LOG_FILE_NAME=app.log node src/index.js"
+    "start": "node src/index.js"
   },
   "repository": {
     "type": "git",
