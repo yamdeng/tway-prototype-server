@@ -161,7 +161,7 @@ let destinationInfos = [
 // 인삿말
 router.get('/greeting', function(req, res) {
     res.send({
-        message: '안녕하세요(엔터플)' 
+        message: '안녕하세요. 티웨이 항공사입니다. 티켓 예매를 시작합니다' 
     });
 });
 
@@ -293,7 +293,7 @@ function getTicketSearchTestData() {
     for (let index = 0; index < 15; index++) {
 
         let info = {};
-        info.airName = '용성비행기' + (index + 1);
+        info.airName = 'tair-' + (index + 1);
         info.isDirect = index % 2 === 0 ? true : false;
         if ((index + 1) < 10) {
             info.ticketDate = '18.01.0' + (index + 1);
