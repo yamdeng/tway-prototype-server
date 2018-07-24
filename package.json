@@ -1,0 +1,41 @@
+{
+  "name": "function",
+  "version": "1.0.0",
+  "description": "This README would normally document whatever steps are necessary to get your application up and running.",
+  "main": "index.js",
+  "scripts": {
+    "eslint": "node_modules/.bin/eslint src/**/*.js",
+    "start": "cross-env NODE_ENV=production PORT=8000 LOG_LABEL=app LOG_FILE_NAME=app.log node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "chalk": "^2.4.1",
+    "compression": "^1.7.2",
+    "cookie-parser": "^1.4.3",
+    "cors": "^2.8.4",
+    "es6-error": "^4.1.1",
+    "express": "^4.16.3",
+    "lodash": "^4.17.10",
+    "moment": "^2.22.2",
+    "moment-timezone": "^0.5.20",
+    "mysql": "^2.15.0",
+    "serve-favicon": "^2.5.0",
+    "socket.io": "^2.1.1",
+    "socket.io-redis": "^5.2.0",
+    "socketio-sticky-session": "^0.4.3",
+    "sticky-session": "^1.1.2",
+    "superagent": "^3.8.3",
+    "winston": "^3.0.0"
+  },
+  "devDependencies": {
+    "cross-env": "^5.2.0",
+    "eslint": "^4.19.1"
+  }
+}

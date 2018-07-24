@@ -1,0 +1,15 @@
+{
+    "apps": [
+        {
+            "name": "air-test-server",
+            "script": "./src/index.js",
+            "watch": false,
+            "env": {
+                "PORT": 8000,
+                "NODE_ENV": "production",
+                "LOG_LABEL": "app",
+                "LOG_FILE_NAME": "app.log"
+            }
+        }
+    ]
+}
