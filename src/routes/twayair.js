@@ -299,7 +299,7 @@ function getTicketSearchTestData() {
             info.ticketDate = '18.01.0' + (index + 1);
         } else {
             info.ticketDate = '18.01.' + (index + 1);
-        }
+        }        
 
         info.eventFareInfo = {
             isSoldout: (index % 2 === 0 ? false : true),
@@ -324,6 +324,46 @@ function getTicketSearchTestData() {
         info.ticketTime = '00:10';
         info.arriveTime = '15:10';
         info.airTime = '15h 00m';
+
+        info.timeList = [];
+        for(let timeIndex=0; timeIndex<7; timeIndex++) {
+            let timeInfo = {};
+
+            timeInfo.airName = 'tair-' + (index + 1);
+            timeInfo.isDirect = index % 2 === 0 ? true : false;
+            if ((index + 1) < 10) {
+                timeInfo.ticketDate = '18.01.0' + (index + 1);
+            } else {
+                timeInfo.ticketDate = '18.01.' + (index + 1);
+            }        
+
+            timeInfo.eventFareInfo = {
+                isSoldout: (index % 2 === 0 ? false : true),
+                amt: ((Math.floor(Math.random() * 10) + 1) * 10000)
+            };
+
+            timeInfo.smartFareInfo = {
+                isSoldout: (index % 2 === 0 ? false : true),
+                amt: ((Math.floor(Math.random() * 10) + 1) * 10000)
+            };
+
+            timeInfo.normalFareInfo = {
+                isSoldout: (index % 2 === 0 ? false : true),
+                amt: ((Math.floor(Math.random() * 10) + 1) * 10000)
+            };
+
+            timeInfo.airFraeAmt = ((Math.floor(Math.random() * 10) + 1) * 1000);
+            timeInfo.oilPlusAmt = ((Math.floor(Math.random() * 10) + 1) * 1000);
+            timeInfo.airFaciUseAmt = ((Math.floor(Math.random() * 10) + 1) * 1000);
+            timeInfo.amt = ((Math.floor(Math.random() * 10) + 1) * 1000);
+
+            timeInfo.ticketTime = '0' + timeIndex + ':10';
+            timeInfo.arriveTime = '1' + timeIndex + ':10';
+            timeInfo.airTime = '11h 00m';
+
+            info.timeList.push(timeInfo);
+        }
+
         testData.push(info);
     }
 
