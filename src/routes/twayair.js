@@ -302,17 +302,17 @@ function getTicketSearchTestData() {
         }
 
         info.eventFareInfo = {
-            isSoldout: (index % 2 === 0 ? true : false),
+            isSoldout: (index % 2 === 0 ? false : true),
             amt: ((Math.floor(Math.random() * 10) + 1) * 10000)
         };
 
         info.smartFareInfo = {
-            isSoldout: (index % 2 === 0 ? true : false),
+            isSoldout: (index % 2 === 0 ? false : true),
             amt: ((Math.floor(Math.random() * 10) + 1) * 10000)
         };
 
         info.normalFareInfo = {
-            isSoldout: (index % 2 === 0 ? true : false),
+            isSoldout: (index % 2 === 0 ? false : true),
             amt: ((Math.floor(Math.random() * 10) + 1) * 10000)
         };
 
