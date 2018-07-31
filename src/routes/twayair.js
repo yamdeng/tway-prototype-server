@@ -331,11 +331,12 @@ function getTicketSearchTestData() {
 
             timeInfo.airName = 'tair-' + (index + 1);
             timeInfo.isDirect = index % 2 === 0 ? true : false;
-            if ((index + 1) < 10) {
-                timeInfo.ticketDate = '18.01.0' + (index + 1);
-            } else {
-                timeInfo.ticketDate = '18.01.' + (index + 1);
-            }        
+            timeInfo.ticketDate = info.ticketDate;
+            // if ((index + 1) < 10) {
+            //     timeInfo.ticketDate = '18.01.0' + (index + 1);
+            // } else {
+            //     timeInfo.ticketDate = '18.01.' + (index + 1);
+            // }        
 
             timeInfo.eventFareInfo = {
                 isSoldout: (index % 2 === 0 ? false : true),
