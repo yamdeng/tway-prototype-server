@@ -217,14 +217,14 @@ router.get('/ticketSearch', function (req, res) {
     // 편도일 경우
     if(isOneWay) {
         result = {
-            goInfo:{
+            goingInfo:{
                 details: goDetails
             }
         };
     } else {
         // 왕복일 경우
         result = {
-            goInfo: {
+            goingInfo: {
                 details: goDetails
             },
             comingInfo: {
@@ -253,14 +253,14 @@ router.post('/ticketSearch', function (req, res) {
     // 편도일 경우
     if (isOneWay) {
         result = {
-            goInfo: {
+            goingInfo: {
                 details: goDetails
             }
         };
     } else {
         // 왕복일 경우
         result = {
-            goInfo: {
+            goingInfo: {
                 details: goDetails
             },
             comingInfo: {
