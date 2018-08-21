@@ -360,7 +360,7 @@ function getTicketSearchTestData() {
 
             timeInfo.ticketTime = '0' + timeIndex + ':10';
             timeInfo.arriveTime = '1' + timeIndex + ':10';
-            timeInfo.airTime = '11h 00m';
+            timeInfo.airTime = '10h 00m';
 
             info.timeList.push(timeInfo);
         }
